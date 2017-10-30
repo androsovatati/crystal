@@ -1,0 +1,22 @@
+@import '../helpers/variables';
+
+.services {
+    width: 100%;
+    background: white;
+
+    &__wrapper {
+        max-width: $container-width;
+        padding: $padding-value;
+        margin: 0 auto;
+    }
+
+    &__title {
+        padding-top: 70px;
+        color: $primary-color;
+        font-family: 'ProximaNova';
+        font-size: 40px;
+        font-weight: 800;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
