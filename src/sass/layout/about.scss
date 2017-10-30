@@ -8,6 +8,34 @@
         max-width: $container-width;
         padding: $padding-value;
         margin: 0 auto;
+        background-image: url('./img/tools.png');
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: bottom right;
     }
+
+    &__title {
+        padding-top: 70px;
+        color: $primary-color;
+        font-family: 'ProximaNova';
+        font-size: 40px;
+        font-weight: 800;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__article {
+        width: 50%;
+        padding: 70px 0; 
+        color: $gray;
+        font-family: 'ProximaNova';
+        line-height: 1.375;
+
+        & p:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+
+
 
 }
