@@ -1,0 +1,66 @@
+@import '../helpers/variables';
+
+.main-banner {
+    width: 100%;
+    background: url('./img/main-banner.jpg');
+    background-size: cover;
+    background-position: center center;
+    min-height: 450px;
+    color: white;
+    font-family: 'ProximaNova';
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: $container-width;
+        padding: 100px 30px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        margin-bottom: 40px;
+        font-size: 52px;
+        font-weight: 800;
+        line-height: 1.3;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__subtitle {
+        margin-bottom: 40px;
+        font-size: 28px;
+        font-weight: 300;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    &__button {
+        width: 370px;
+        height: 72px;
+        margin-bottom: 40px;
+        background: white;
+        color: $accent-color;
+        border-radius: 36px;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 72px;;
+        text-align: center;
+        cursor: pointer;
+        transition: all .3s ease;
+
+        &:hover {
+            box-shadow: 0 0 50px 5px white;
+        }
+    }
+
+    &__arrow-link {
+        cursor: pointer;
+        transition: all .3s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}

@@ -1,0 +1,103 @@
+@import '../helpers/variables';
+
+.header {
+    width: 100%;
+    background: white;
+
+    &__wrapper {
+        max-width: $container-width;
+        padding: $padding-value;
+        margin: 0 auto;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+        border-bottom: 2px solid $extra-light-gray;
+    }
+
+    &__logo {
+        width: 235px;
+        height: auto;
+    }
+
+    &-item {
+        display: flex;
+        align-items: center;
+
+        &__icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            border-radius: 50%;
+            background: $primary-color;
+            color: white;
+
+            .fa-clock-o {
+                font-size: 2em;
+            }
+
+            .fa-envelope {
+                font-size: 1.5em;
+            }
+
+            .fa-mobile {
+                font-size: 2.5em;
+            }
+        }
+
+        &__text {
+            color: $gray;    
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        &__title {
+            font-family: 'OpenSans';
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        &__description {
+            font-family: 'OpenSans';
+            font-weight: 400;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        color: $dark-gray;
+        font-family: 'OpenSans';
+        font-weight: 400;        
+        font-size: 18px;
+
+        & ul li{
+            float: left;
+            padding-right: 30px;
+            list-style-type: none;
+            cursor: pointer;
+
+            &:hover {
+                font-weight: 700;
+            }
+
+            &._active {
+                font-family: 'OpenSans';
+                font-weight: 700;            
+                cursor: default;
+            }
+        }
+
+        .fa-vk {
+            font-size: 1.5em;
+        }
+    }
+
+}

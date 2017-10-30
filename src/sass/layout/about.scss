@@ -1,0 +1,13 @@
+@import '../helpers/variables';
+
+.about {
+    width: 100%;
+    background: white;
+
+    &__wrapper {
+        max-width: $container-width;
+        padding: $padding-value;
+        margin: 0 auto;
+    }
+
+}
