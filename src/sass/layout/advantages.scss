@@ -1,0 +1,45 @@
+@import '../helpers/variables';
+
+.advantages {
+    width: 100%;
+    padding: 70px 0;
+    background: rgb(26,155,220); /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(26,155,220,1) 0%, rgba(1,96,191,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(26,155,220,1) 0%,rgba(1,96,191,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(26,155,220,1) 0%,rgba(1,96,191,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    color: white;
+    font-family: 'ProximaNova';
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: $container-width;
+        padding: 0 30px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+}
+
+.advantage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__img {
+        width: 70px;
+        height: 70px;
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 60px;
+        text-transform: uppercase;
+    }
+
+    &__description {
+        font-weight: 300;
+        text-align: center;
+    }
+}
