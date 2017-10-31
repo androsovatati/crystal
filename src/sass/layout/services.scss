@@ -11,12 +11,81 @@
     }
 
     &__title {
-        padding-top: 70px;
+        padding: 70px 0;
         color: $primary-color;
         font-family: 'ProximaNova';
         font-size: 40px;
         font-weight: 800;
         text-transform: uppercase;
         text-align: center;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 70px;
+    }
+
+    &__treatment {
+        background: url('./img/services_1.png');  
+    }
+
+    &__deleting {
+        background: url('./img/services_2.png');
+    }
+
+    &__prothesis {
+        background: url('./img/services_3.png');
+    }
+}
+
+.service {
+    width: 330px;
+    height: 220px;
+
+    &__wrapper {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background: rgba(2, 101, 228, 0.5);
+        transition: all .3s ease;
+        cursor: pointer;
+
+        &:hover {
+            background: rgba(14, 167, 243, 0.5); 
+            box-shadow: 0 0 50px 10px rgba(0,0,0,.2);      
+            
+            & .service__name::after {
+                left: 0;
+                right: 0;
+                height: 2px;
+                transform: scaleX(1);
+            }
+        }
+    }
+
+    &__name {
+        color: white;
+        font-family: 'ProximaNova';
+        font-size: 26px;
+        font-weight: 800;
+        text-align: center;
+        text-transform: uppercase;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 2px;
+            margin-top: 10px;
+            background: white;
+            transform: scaleX(.2);
+            transition: all .3s ease;
+        }
     }
 }
