@@ -1,0 +1,64 @@
+@import '../helpers/variables';
+
+.speciliasts {
+    width: 100%;
+    background: white url('./img/specialists_bg.png');
+    background-repeat: no-repeat;
+    background-size: auto 500px;
+    background-position: top right;
+    height: 500px;
+    margin-bottom: 70px;
+
+    &__wrapper {
+        max-width: $container-width;
+        padding: $padding-value;
+        margin: 0 auto;
+    }
+
+    &__title {
+        padding: 70px 0;
+        color: $primary-color;
+        font-family: 'ProximaNova';
+        font-size: 40px;
+        font-weight: 800;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 70px;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.specialist {
+
+    &__img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+    }
+
+    &__name {
+        color: $gray;
+        font-family: 'ProximaNova';
+        font-size: 22px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    &__profession {
+        color: $gray;
+        font-family: 'ProximaNova';
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 2.5;
+        text-align: center;
+    }
+}

@@ -13,7 +13,7 @@
     &__info {
         display: flex;
         justify-content: space-between;
-        padding: 15px 0;
+        padding: 15px 30px;
         border-bottom: 2px solid $extra-light-gray;
     }
 
@@ -73,6 +73,7 @@
         justify-content: space-between;
         align-items: center;
         height: 50px;
+        padding: 0 30px;
         color: $dark-gray;
         font-family: 'OpenSans';
         font-weight: 400;        
@@ -97,6 +98,14 @@
 
         .fa-vk {
             font-size: 1.5em;
+        }
+    }
+
+    &__vk-icon {
+        cursor: pointer;
+        
+        &:hover {
+            color: $primary-color;
         }
     }
 

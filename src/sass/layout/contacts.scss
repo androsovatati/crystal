@@ -1,0 +1,103 @@
+@import '../helpers/variables';
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: white;
+
+    &__bg {
+        position: relative;
+        flex-grow: 1;
+        background: rgb(26,155,220); /* Old browsers */
+        background: -moz-linear-gradient(left, rgba(26,155,220,1) 0%, rgba(1,96,191,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, rgba(26,155,220,1) 0%,rgba(1,96,191,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, rgba(26,155,220,1) 0%,rgba(1,96,191,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    }
+
+    &__wrapper {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background: url('./img/contacts_bg.png');
+        background-size: 300px auto;
+        background-repeat: no-repeat;
+        background-position: bottom right;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: $container-width;
+        padding: $padding-value;
+        margin: 0 auto;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    &__title {
+        padding: 30px 0 30px 20px;
+        color: white;
+        font-family: 'ProximaNova';
+        font-size: 40px;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+
+    &-item {
+        display: flex;
+        align-items: center;
+        padding-bottom: 30px;
+
+        &__icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            margin: 0 10px;
+            color: white;
+
+            .fa-clock-o {
+                font-size: 2em;
+            }
+
+            .fa-envelope {
+                font-size: 1.5em;
+            }
+
+            .fa-mobile {
+                font-size: 2.5em;
+            }
+            
+            .fa-map-marker {
+                font-size: 2em;
+            }
+        }
+
+        &__text {
+            color: white;    
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        &__title {
+            font-family: 'OpenSans';
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        &__description {
+            font-family: 'OpenSans';
+            font-weight: 400;
+        }
+    }
+}

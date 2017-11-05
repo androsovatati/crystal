@@ -1,0 +1,86 @@
+@import '../helpers/variables';
+
+.reviews {
+    width: 100%;
+    background: white url('./img/reviews_bg.png');
+    background-repeat: no-repeat;
+    background-size: auto 400px;
+    background-position: bottom right;
+
+    &__wrapper {
+        max-width: $container-width;
+        padding-bottom: 80px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        padding: 70px 0;
+        color: $primary-color;
+        font-family: 'ProximaNova';
+        font-size: 40px;
+        font-weight: 800;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 70px;
+    }
+
+    &__btn {
+        padding: 0 40px;
+        color: $primary-color;
+        cursor: pointer;
+
+        &:hover {
+            color: $dark-gray;
+        }
+    }
+}
+
+.review {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px;
+    width: 800px;
+    height: 300px;
+    background: white;
+    box-shadow: $shadow;
+
+    &__img {
+        width: 130px;
+        height: 130px;
+        margin-right: 50px;
+        border-radius: 50%;
+    }
+
+    &__author {
+        color: $gray;
+        font-family: 'ProximaNova';
+        font-size: 22px;
+        font-weight: 800;
+        line-height: 1.7;
+    }
+
+    &__location {
+        color: $gray;
+        font-family: 'ProximaNova';
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    &__text {
+        padding-top: 30px; 
+        color: $gray;
+        font-size: 20px;
+        font-family: 'ProximaNova';
+        line-height: 1.375;
+
+        & p:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+}
