@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
     <title>Crystal+</title>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-	<link rel="stylesheet" href="./styles.min.css">
+    <link rel="stylesheet" href="./styles.min.css">
 </head>
 <body>
     <header class="header">
@@ -53,16 +53,28 @@
             </div>
             <div class="header__menu">
                 <ul>
-                    <li class="_active">О клинике</li>
-                    <li>Услуги</li>
-                    <li>Специалисты</li>
-                    <li>Сертификаты</li>
-                    <li>Отзывы</li>
-                    <li>Контакты</li>
+                    <li class="_active">
+                        <a href="#about" title="О клинике">О клинике</a>
+                    </li>
+                    <li>
+                        <a href="#services" title="Услуги">Услуги</a>
+                    </li>
+                    <li>
+                        <a href="#specialists" title="Специалисты">Специалисты</a>
+                    </li>
+                    <li>
+                        <a href="#certificates" title="Сертификаты">Сертификаты</a>
+                    </li>
+                    <li>
+                        <a href="#reviews" title="Отзывы">Отзывы</a>
+                    </li>
+                    <li>
+                        <a href="#contacts" title="Контакты">Контакты</a>
+                    </li>
                 </ul>
-                <div class="header__vk-icon">
+                <a href="https://vk.com/club156381847" target="_blank" class="header__vk-icon">
                     <i class="fa fa-vk"></i>
-                </div>
+                </a>
             </div>
         </div>
     </header>
@@ -77,16 +89,16 @@
                 Команда выскоквалифицированных специалистов,</br>
                 современное оборудование, качественные материалы
             </div>
-            <div class="main-banner__button">
+            <a href="#about" class="main-banner__button">
                 Узнать подробнее
-            </div>
-            <div class="main-banner__arrow-link">
+            </a>
+            <a href="#about" class="main-banner__arrow-link">
                 <i class="fa fa-3x fa-chevron-down"></i>
-            </div>
+            </a>
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="about__wrapper">
             <div class="about__title">
                 О клинике
@@ -135,7 +147,7 @@
         </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="services">
         <div class="services__wrapper">
             <div class="services__title">
                 Наши услуги
@@ -174,6 +186,14 @@
                                 Цена (руб)
                             </div>
                         </div>
+                        <div class="price-table__row">
+                            <div class="price-table__col">
+                                Консультация
+                            </div>
+                            <div class="price-table__col">
+                                200
+                            </div>                                    
+                        </div>
                     </div>
                     <div class="price-table__right-col">
                         <div class="price-table__header">
@@ -190,12 +210,12 @@
         </div>
     </section>
 
-    <section class="speciliasts">
-        <div class="speciliasts__wrapper">
-            <div class="speciliasts__title">
+    <section class="specialists" id="specialists">
+        <div class="specialists__wrapper">
+            <div class="specialists__title">
                 Наши специалисты
             </div>
-            <div class="speciliasts__list">
+            <div class="specialists__list">
                 <div class="specialist">
                     <img src="./img/men.png" class="specialist__img">
                     <div class="specialist__name">
@@ -240,7 +260,7 @@
         </div>
     </section>
 
-    <section class="certificates">
+    <section class="certificates" id="certificates">
         <div class="certificates__wrapper">
             <div class="certificates__title">
                 Сертификаты и лицензии
@@ -259,7 +279,7 @@
         </div>
     </section>
 
-    <section class="reviews">
+    <section class="reviews" id="reviews">
         <div class="reviews__wrapper">
             <div class="reviews__title">
                 Отзывы клиентов
@@ -291,7 +311,7 @@
         </div>
     </section>
     
-    <section class="contacts">
+    <section class="contacts" id="contacts">
         <div class="contacts__map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2374.986622438649!2d51.531886215359116!3d53.46869917324129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x416682e1ab963caf%3A0x8ea374e162973880!2z0YPQuy4g0JvQtdGA0LzQvtC90YLQvtCy0LAsINCa0LjQvdC10LvRjC3Qp9C10YDQutCw0YHRgdGLLCDQodCw0LzQsNGA0YHQutCw0Y8g0L7QsdC7LiwgNDQ2MzUx!5e0!3m2!1sru!2sru!4v1509895519955" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
@@ -362,17 +382,29 @@
 
     <section class="footer">
         <div class="footer__menu">
-            <ul>
-                <li>О клинике</li>
-                <li>Услуги</li>
-                <li>Специалисты</li>
-                <li>Сертификаты</li>
-                <li>Отзывы</li>
-                <li class="_active">Контакты</li>
-            </ul>
-            <div class="footer__vk-icon">
+                <ul>
+                    <li>
+                        <a href="#about" title="О клинике">О клинике</a>
+                    </li>
+                    <li>
+                        <a href="#services" title="Услуги">Услуги</a>
+                    </li>
+                    <li>
+                        <a href="#specialists" title="Специалисты">Специалисты</a>
+                    </li>
+                    <li>
+                        <a href="#certificates" title="Сертификаты">Сертификаты</a>
+                    </li>
+                    <li>
+                        <a href="#reviews" title="Отзывы">Отзывы</a>
+                    </li>
+                    <li class="_active">
+                        <a href="#contacts" title="Контакты">Контакты</a>
+                    </li>
+                </ul>
+            <a href="https://vk.com/club156381847" target="_blank" class="footer__vk-icon">
                 <i class="fa fa-vk"></i>
-            </div>
+            </a>
         </div>
         <div class="footer__info">
             
@@ -433,4 +465,5 @@
             &copy; 2004 - 2017, ООО "Кристалл" 
         </div>    
     </section>
+</body>
 </html>

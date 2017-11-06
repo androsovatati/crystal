@@ -39,8 +39,8 @@
     }
 
     &__price {
-        width: 600px;
-        height: 300px;
+        width: 1000px;
+        height: 400px;
         margin: 0 auto;
         margin-bottom: 70px;
         box-shadow: $shadow;
@@ -101,9 +101,46 @@
 .price-table {
     display: flex;
     justify-content: space-between;
+    padding: 50px;
+
+    &__left-col, &__right-col {
+        width: 420px;
+    }
 
     &__header {
         display: flex;
         justify-content: space-between;
+        width: 100%;
+        background: #e0e5f1;
+        color: $accent-color;
+        font-family: 'ProximaNova';
+        font-size: 18px;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        color: $accent-color;
+        font-family: 'ProximaNova';
+        font-size: 18px;
+    }
+
+    &__col {
+        margin: 10px;
+
+        &:first-child {
+            font-weight: 400;  
+        }
+
+        &:last-child {
+            font-weight: 700;  
+        }
+    }
+
+    &__title {
+        margin: 10px; 
     }
 }

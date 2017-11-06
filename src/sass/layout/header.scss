@@ -78,15 +78,31 @@
         font-family: 'OpenSans';
         font-weight: 400;        
         font-size: 18px;
-
-        & ul li{
+        
+        & ul li {
             float: left;
-            padding-right: 30px;
             list-style-type: none;
+            margin-right: 30px;
             cursor: pointer;
+            
+            a {
+                display: inline-block;
+                color: $dark-gray;
+                text-decoration: none;
+                text-align: center;
+                
+                &:hover {
+                    font-weight: 700;
+                }
 
-            &:hover {
-                font-weight: 700;
+                &::after {
+                    display: block;
+                    content: attr(title);
+                    font-weight: 700;
+                    height: 0;
+                    overflow: hidden;
+                    visibility: hidden;
+                }
             }
 
             &._active {
@@ -104,9 +120,13 @@
     &__vk-icon {
         cursor: pointer;
         
-        &:hover {
-            color: $primary-color;
+        & .fa-vk {
+            color: $dark-gray;
+            font-size: 1.5em;
+            
+            &:hover {
+                color: $primary-color;
+            }
         }
     }
-
 }
