@@ -47,11 +47,16 @@
     padding: 70px;
     width: 800px;
     height: 300px;
+    margin: 30px;
     background: white;
     box-shadow: $shadow;
 
+    &__wrapper {
+        width: 1000px;
+    }
+
     &__img {
-        width: 130px;
+        width: 130px !important;
         height: 130px;
         margin-right: 50px;
         border-radius: 50%;

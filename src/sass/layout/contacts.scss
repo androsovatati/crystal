@@ -5,6 +5,7 @@
     justify-content: space-between;
     width: 100%;
     background: white;
+    min-height: 500px;
 
     &__bg {
         position: relative;
@@ -32,7 +33,7 @@
         flex-direction: column;
         justify-content: center;
         max-width: $container-width;
-        padding: $padding-value;
+        padding: 40px 60px;
         margin: 0 auto;
     }
 

@@ -40,7 +40,6 @@
 
     &__price {
         width: 1000px;
-        height: 400px;
         margin: 0 auto;
         margin-bottom: 70px;
         box-shadow: $shadow;
@@ -63,6 +62,18 @@
         cursor: pointer;
 
         &:hover {
+            background: rgba(14, 167, 243, 0.5); 
+            box-shadow: $shadow;      
+            
+            & .service__name::after {
+                left: 0;
+                right: 0;
+                height: 2px;
+                transform: scaleX(1);
+            }
+        }
+
+        &._active {
             background: rgba(14, 167, 243, 0.5); 
             box-shadow: $shadow;      
             
@@ -111,11 +122,12 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
+        margin-bottom: 10px;
         background: #e0e5f1;
         color: $accent-color;
         font-family: 'ProximaNova';
         font-size: 18px;
-        font-weight: 800;
+        font-weight: 600;
         text-transform: uppercase;
     }
 
@@ -129,10 +141,11 @@
     }
 
     &__col {
-        margin: 10px;
+        margin: 2px;
+        line-height: 1;
 
         &:first-child {
-            font-weight: 400;  
+            font-weight: 600;  
         }
 
         &:last-child {

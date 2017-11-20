@@ -6,8 +6,7 @@
     background-repeat: no-repeat;
     background-size: auto 500px;
     background-position: top right;
-    height: 500px;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
 
     &__wrapper {
         max-width: $container-width;
@@ -16,7 +15,7 @@
     }
 
     &__title {
-        padding: 70px 0;
+        padding: 70px 0 100px 0;
         color: $primary-color;
         font-family: 'ProximaNova';
         font-size: 40px;
@@ -43,6 +42,7 @@
         width: 250px;
         height: 250px;
         border-radius: 50%;
+        margin-bottom: 25px;
     }
 
     &__name {

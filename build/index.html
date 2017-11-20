@@ -4,7 +4,11 @@
 	<meta charset="UTF-8">
     <title>Crystal+</title>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />    
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
     <link rel="stylesheet" href="./styles.min.css">
+    <link rel="icon" href="./img/favicon.ico">
 </head>
 <body>
     <header class="header">
@@ -122,8 +126,9 @@
                     Клиника, где приятно
                 </div>
                 <div class="advantage__description">
-                    Высочайший профессионализм врачей, а
-                    так же интерьер и обстановка в клинике предполагают полный комфорт.
+                    Высочайший профессионализм врачей, а</br>
+                    так же интерьер и обстановка в клинике</br> 
+                    предполагают полный комфорт.
                 </div>
             </div>
             <div class="advantage">
@@ -132,7 +137,9 @@
                     Клиника полного цикла
                 </div>
                 <div class="advantage__description">
-                    Клиника оснащена всем необходимым оборудованием, которое позволяет произвести качественное лечение и протезирование.
+                    Клиника оснащена всем необходимым</br> 
+                    оборудованием, которое позволяет произвести</br> 
+                    качественное лечение и протезирование.
                 </div>
             </div>
             <div class="advantage">
@@ -141,7 +148,9 @@
                     Медицинская безопасность
                 </div>
                 <div class="advantage__description">
-                    Клиника обладает автономным электропитанием и собственным стерилизационным блоком.
+                    Клиника обладает автономным</br> 
+                    электропитанием и собственным</br> 
+                    стерилизационным блоком.
                 </div>
             </div>
         </div>
@@ -161,7 +170,7 @@
                     </div>
                 </div>
                 <div class="service services__deleting">
-                    <div class="service__wrapper">
+                    <div class="service__wrapper _active">
                         <div class="service__name">
                             Удаление
                         </div>
@@ -185,14 +194,6 @@
                             <div class="price-table__title">
                                 Цена (руб)
                             </div>
-                        </div>
-                        <div class="price-table__row">
-                            <div class="price-table__col">
-                                Консультация
-                            </div>
-                            <div class="price-table__col">
-                                200
-                            </div>                                    
                         </div>
                     </div>
                     <div class="price-table__right-col">
@@ -223,7 +224,7 @@
                         Геннадий Семенович
                     </div>
                     <div class="specialist__profession">
-                        Врач-терапевт
+                        Врач-хирург
                     </div>
                 </div>
                 <div class="specialist">
@@ -233,7 +234,7 @@
                         Марина Геннадьевна
                     </div>
                     <div class="specialist__profession">
-                        Медсестра
+                        Врач-терапевт
                     </div>
                 </div>
                 <div class="specialist">
@@ -269,9 +270,9 @@
                     <div class="certificates__btn certificates__btn_left">
                     </div> 
                     <div class="certificates__content">
-                        <img src="./img/cert2.png" alt="" class="certificate">
-                        <img src="./img/cert1.png" alt="" class="certificate">
-                        <img src="./img/cert3.png" alt="" class="certificate">
+                        <a data-fancybox="gallery" href="./img/cert1.jpg"><img src="./img/cert1.png" alt="" class="certificate"></a>
+                        <a data-fancybox="gallery" href="./img/cert3.jpg"><img src="./img/cert3.png" alt="" class="certificate"></a>
+                        <a data-fancybox="gallery" href="./img/cert2.jpg"><img src="./img/cert2.png" alt="" class="certificate"></a>
                     </div> 
                     <div class="certificates__btn certificates__btn_right">
                     </div> 
@@ -285,26 +286,44 @@
                 Отзывы клиентов
             </div>
             <div class="reviews__list">
-                <div class="reviews__btn certificates__btn_left">
+                <div class="reviews__btn reviews__btn_left">
                     <i class="fa fa-3x fa-chevron-left"></i>
                 </div> 
-                <div class="review">
-                    <img src="./img/woman.png" alt="" class="review__img">
-                    <div class="review__content">
-                        <div class="review__author">
-                            Анастасия Гончарова
+                <div class="review__wrapper owl-carousel">
+                    <div class="review">
+                        <img src="./img/woman.png" alt="" class="review__img">
+                        <div class="review__content">
+                            <div class="review__author">
+                                Анастасия Гончарова
+                            </div>
+                            <div class="review__location">
+                                Кинель-Черкассы
+                            </div>
+                            <div class="review__text">
+                                <p>Выражаю свою благодарность! Прекрасный специалист своего дела! Знает и умеет свою работу на 100%. Лечение было на высшем уровне. </p>
+                                    
+                                <p>С детства были неприятные воспоминания о кресле стоматолога и жуткий страх, а после визита именно в эту клинику мое мнение кардинально изменилось. </p>
+                            </div>
                         </div>
-                        <div class="review__location">
-                            Кинель-Черкассы
+                    </div> 
+                    <div class="review">
+                        <img src="./img/woman.png" alt="" class="review__img">
+                        <div class="review__content">
+                            <div class="review__author">
+                                Анастасия Гончарова
+                            </div>
+                            <div class="review__location">
+                                Кинель-Черкассы
+                            </div>
+                            <div class="review__text">
+                                <p>Выражаю свою благодарность! Прекрасный специалист своего дела! Знает и умеет свою работу на 100%. Лечение было на высшем уровне. </p>
+                                    
+                                <p>С детства были неприятные воспоминания о кресле стоматолога и жуткий страх, а после визита именно в эту клинику мое мнение кардинально изменилось. </p>
+                            </div>
                         </div>
-                        <div class="review__text">
-                            <p>Выражаю свою благодарность! Прекрасный специалист своего дела! Знает и умеет свою работу на 100%. Лечение было на высшем уровне. </p>
-                                
-                            <p>С детства были неприятные воспоминания о кресле стоматолога и жуткий страх, а после визита именно в эту клинику мое мнение кардинально изменилось. </p>
-                        </div>
-                    </div>
-                </div> 
-                <div class="reviews__btn certificates__btn_right">
+                    </div> 
+                </div>
+                <div class="reviews__btn reviews__btn_right">
                     <i class="fa fa-3x fa-chevron-right"></i>
                 </div> 
             </div> 
@@ -313,7 +332,7 @@
     
     <section class="contacts" id="contacts">
         <div class="contacts__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2374.986622438649!2d51.531886215359116!3d53.46869917324129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x416682e1ab963caf%3A0x8ea374e162973880!2z0YPQuy4g0JvQtdGA0LzQvtC90YLQvtCy0LAsINCa0LjQvdC10LvRjC3Qp9C10YDQutCw0YHRgdGLLCDQodCw0LzQsNGA0YHQutCw0Y8g0L7QsdC7LiwgNDQ2MzUx!5e0!3m2!1sru!2sru!4v1509895519955" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2374.986622438649!2d51.531886215359116!3d53.46869917324129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x416682e1ab963caf%3A0x8ea374e162973880!2z0YPQuy4g0JvQtdGA0LzQvtC90YLQvtCy0LAsINCa0LjQvdC10LvRjC3Qp9C10YDQutCw0YHRgdGLLCDQodCw0LzQsNGA0YHQutCw0Y8g0L7QsdC7LiwgNDQ2MzUx!5e0!3m2!1sru!2sru!4v1509895519955" width="600" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
         <div class="contacts__bg">
             <div class="contacts__wrapper">
@@ -462,8 +481,91 @@
             </div>
         </div>
         <div class="footer__company-name">
-            &copy; 2004 - 2017, ООО "Кристалл" 
+            &copy; 2004 - 2017, ООО "Кристалл+" 
         </div>    
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/velocity.js"></script>
+    <script>
+        $(document).ready(function () {
+            
+            var data = {};
+
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                center: true,
+                nav:false,
+                smartSpeed: 1000,
+                items:1
+            });
+
+            $('.reviews__btn_left').click(function() {
+                $('.owl-carousel').trigger('prev.owl.carousel');
+            });
+
+            $('.reviews__btn_right').click(function() {
+                $('.owl-carousel').trigger('next.owl.carousel');
+            });
+
+            function drawPrice(priceArr) {
+                $('.price-table__row').empty();
+                var rowCount = Object.keys(priceArr).length,
+                    i = 0;
+
+                for (key in priceArr) {
+
+                    if (i <= rowCount/2) {
+                        $('.price-table__left-col').append(
+                            '<div class="price-table__row">'+
+                                    '<div class="price-table__col">' + key + '</div>' +
+                                    '<div class="price-table__col">' + priceArr[key] + '</div>'+          
+                            '</div>');
+                    } else {
+                        $('.price-table__right-col').append(
+                            '<div class="price-table__row">'+
+                                    '<div class="price-table__col">' + key + '</div>' +
+                                    '<div class="price-table__col">' + priceArr[key] + '</div>'+          
+                            '</div>');
+                    }
+                    i++;
+                }
+            }
+
+            $.ajax({
+                url:'./data.php',
+                success: function(res) {
+                    data = JSON.parse(res);
+
+                    priceArr = data['price']['deleting'];
+                    drawPrice(priceArr);
+                },
+                error: function(err) {
+                    console.log(err);
+                }
+            });
+
+            $('.service__wrapper').click(function() {
+                $('.service__wrapper').removeClass('_active');
+                $(this).addClass('_active');
+
+                var type = $(this).parent().attr('class').split('__')[1],
+                    priceArr = data['price'][type];
+
+                drawPrice(priceArr);
+
+            });
+            
+            $('a[href*="#"]').on('click', function (e) {
+                var target = $(this).attr('href');
+                
+                $(target).velocity('scroll', {
+                    duration: 800,
+                    easing: 'ease-in-out'
+                });
+            });
+        });
+    </script>
 </body>
 </html>

@@ -19,7 +19,7 @@ gulp.task('html', function () {
 gulp.task('sass', ['html'] ,function () {
     return gulp.src('./src/sass/styles.scss')
         .pipe(sass().on('error', notify.onError({title: 'sass'})))
-        .pipe(uncss({html: ['./build/index.html']}))
+        // .pipe(uncss({html: ['./build/index.html']}))
         .pipe(prefix({browsers: ['last 2 versions', 'safari 5', 'ie 10', 'opera 12.1', 'ios 6', 'android 4'], cascade: true}))
         .pipe(cssmin())
         .pipe(rename({suffix: '.min'}))
@@ -56,6 +56,11 @@ gulp.task('fonts', function () {
         .pipe(gulp.dest('./build/fonts'))
 });
 
-gulp.task('build', ['clean', 'html', 'sass', 'image', 'fonts']);
+gulp.task('js', function () {
+    return gulp.src('./src/js/*.js')
+        .pipe(gulp.dest('./build/js'))
+});
 
-gulp.task('default', ['html', 'sass', 'server', 'watch']);
+gulp.task('build', ['clean', 'html', 'sass', 'js', 'image', 'fonts']);
+
+gulp.task('default', ['html', 'sass', 'js', 'server', 'watch']);
